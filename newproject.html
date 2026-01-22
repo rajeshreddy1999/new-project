@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple HTML Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background: #4f46e5;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #4f46e5;
+    }
+    button {
+      background: #4f46e5;
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #4338ca;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #e5e7eb;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My First HTML Project</h1>
+    <p>Simple, clean, and beginner-friendly</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container" id="about">
+    <h2>About</h2>
+    <p>
+      This is a simple HTML project made using only HTML, CSS, and a little
+      JavaScript. It is perfect for beginners who want to understand how a
+      basic website works.
+    </p>
+  </div>
+
+  <div class="container" id="features">
+    <h2>Features</h2>
+    <ul>
+      <li>Responsive layout</li>
+      <li>Clean design</li>
+      <li>Button with JavaScript action</li>
+    </ul>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="message"></p>
+  </div>
+
+  <div class="container" id="contact">
+    <h2>Contact</h2>
+    <p>Email: rajeshre7993@gmail.com</p>
+    <p>Phone: +91 7993443694,9390865650</p>
+  </div>
+
+  <footer>
+    <p>© 2026 My Simple HTML Project</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").innerText =
+        "You clicked the button! JavaScript is working 🎉";
+    }
+  </script>
+
+</body>
+</html>
